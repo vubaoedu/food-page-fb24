@@ -1,0 +1,29 @@
+.header {
+    // CSS cua header
+    &__top {
+        // CSS cua header__top
+        display: flex;
+    }
+
+    &__main {
+
+        
+    }
+}
+
+.search {
+    &__input {
+
+    }
+
+    &__btn {
+        background-color: var(--color-red);
+        padding: rem(21) rem(75);
+
+        &--round {
+            border-radius: 20px;
+        }
+    }
+
+}
+
