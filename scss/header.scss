@@ -1,4 +1,5 @@
 .header {
+    background-color: #FFF5EC;
     position: relative;
     width: 1920px;
     height: 1048px;
@@ -17,7 +18,13 @@
         }
         .nav {}
     }
-    &__main {}
+    &__main {
+        .main__left {
+            position: absolute;
+            top: 258px;
+            left: 124px;
+        }
+    }
 }
 
 .nav {
@@ -33,18 +40,41 @@
     }
 }
 
+.text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    &__food {
+        font-size: 200px;
+        color: var(--color-blue);
+        line-height: 300px;
+        text-transform: capitalize;
+        opacity: 0.05;
+    }
+    &__sub {
+        font-size: 72px;
+        line-height: 90px;
+        color: var(--color-blue);
+        text-transform: capitalize;
+    }
+}
+
 .search {
     &__input {
         width: 670px;
+        height: 90px;
     }
     &__btn {
         background-color: var(--color-red);
         padding: rem(21) rem(75);
+        height: 85px;
         &--round {
+            font-size: 30px;
             width: 200px;
-            border-radius: 20px 0 0 0;
+            border-radius: 90px 0 0 0;
             margin: -205px;
             border: solid 0px var(--color-red);
+            color: white;
         }
     }
 }
@@ -72,5 +102,5 @@
     height: 1210px;
     right: 0px;
     top: 0px;
-    z-index: -9999;
+    z-index: 1;
 }
