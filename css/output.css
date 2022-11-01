@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+:root {
+  --font-size: 14px;
+  --font-family: "Poppins", sans-serif;
+  --font-weight: 400;
+  --color-gray: #707070;
+  --color-blue: #2E266F;
+  --color-red: #FE043C;
+  --color-green: #35CD8C;
+  --border-radius: 20px;
+  --opacity: 0.7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+html {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  line-height: 1.7142857143rem;
+}
+
+.header {
+  background-color: #FFF5EC;
+  position: relative;
+  width: 1920px;
+  height: 1048px;
+}
+.header__top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__top .logo {
+  color: var(--color-red);
+  width: 245px;
+  height: 108px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 108px;
+}
+.header__main .main__left {
+  position: absolute;
+  top: 258px;
+  left: 124px;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav ul li {
+  margin: 20px;
+}
+.nav ul li a {
+  text-decoration: none;
+}
+
+.text {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.text__food {
+  font-size: 200px;
+  color: var(--color-blue);
+  line-height: 300px;
+  text-transform: capitalize;
+  opacity: 0.05;
+}
+.text__sub {
+  font-size: 72px;
+  line-height: 90px;
+  color: var(--color-blue);
+  text-transform: capitalize;
+}
+
+.search__input {
+  width: 670px;
+  height: 90px;
+}
+.search__btn {
+  background-color: var(--color-red);
+  padding: rem(21) rem(75);
+  height: 85px;
+}
+.search__btn--round {
+  font-size: 30px;
+  width: 200px;
+  border-radius: 90px 0 0 0;
+  margin: -205px;
+  border: solid 0px var(--color-red);
+  color: white;
+}
+
+.icon_left {
+  position: absolute;
+  left: 0;
+  bottom: 90px;
+  background-color: var(--color-red);
+  width: 280px;
+  height: 65px;
+  border-radius: 0px 100px 100px 0px;
+  font-size: 30px;
+  color: white;
+  padding-left: 25px;
+}
+.icon_left .fa-solid {
+  margin: 17px;
+}
+
+.red {
+  position: absolute;
+  background-color: var(--color-red);
+  width: 514px;
+  height: 1210px;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=output.css.map */

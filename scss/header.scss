@@ -1,0 +1,106 @@
+.header {
+    background-color: #FFF5EC;
+    position: relative;
+    width: 1920px;
+    height: 1048px;
+    &__top {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .logo {
+            color: var(--color-red);
+            width: 245px;
+            height: 108px;
+            font-weight: 700;
+            font-size: 72px;
+            line-height: 108px;
+        }
+        .nav {}
+    }
+    &__main {
+        .main__left {
+            position: absolute;
+            top: 258px;
+            left: 124px;
+        }
+    }
+}
+
+.nav {
+    ul {
+        display: flex;
+        list-style-type: none;
+        li {
+            margin: 20px;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    &__food {
+        font-size: 200px;
+        color: var(--color-blue);
+        line-height: 300px;
+        text-transform: capitalize;
+        opacity: 0.05;
+    }
+    &__sub {
+        font-size: 72px;
+        line-height: 90px;
+        color: var(--color-blue);
+        text-transform: capitalize;
+    }
+}
+
+.search {
+    &__input {
+        width: 670px;
+        height: 90px;
+    }
+    &__btn {
+        background-color: var(--color-red);
+        padding: rem(21) rem(75);
+        height: 85px;
+        &--round {
+            font-size: 30px;
+            width: 200px;
+            border-radius: 90px 0 0 0;
+            margin: -205px;
+            border: solid 0px var(--color-red);
+            color: white;
+        }
+    }
+}
+
+.icon_left {
+    position: absolute;
+    left: 0;
+    bottom: 90px;
+    background-color: var(--color-red);
+    width: 280px;
+    height: 65px;
+    border-radius: 0px 100px 100px 0px;
+    font-size: 30px;
+    color: white;
+    padding-left: 25px;
+    .fa-solid {
+        margin: 17px;
+    }
+}
+
+.red {
+    position: absolute;
+    background-color: var(--color-red);
+    width: 514px;
+    height: 1210px;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+}
