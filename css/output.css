@@ -31,22 +31,35 @@ html {
 .header {
   background-color: #FFF5EC;
   position: relative;
-  width: 1920px;
+  width: 100%;
   height: 1048px;
+  z-index: -3;
 }
 .header__top {
+  padding: 0 125px;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.header__top .logo {
+.header__top .left_head {
+  display: flex;
+  align-items: center;
+}
+.header__top .left_head .logo {
   color: var(--color-red);
   width: 245px;
   height: 108px;
   font-weight: 700;
   font-size: 72px;
   line-height: 108px;
+  margin-right: 200px;
+}
+.header__top .left_head .nav {
+  color: var(--color-blue);
+}
+.header__top .user {
+  z-index: 1;
 }
 .header__main .main__left {
   position: absolute;
@@ -63,6 +76,37 @@ html {
 }
 .nav ul li a {
   text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.user {
+  display: flex;
+  color: white;
+}
+.user__icon {
+  position: relative;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  z-index: 10;
+  border-radius: 50%;
+  color: var(--color-blue);
+  margin-right: 5px;
+}
+.user__icon--green {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: green;
+  width: 10px;
+  height: 10px;
+  z-index: 2000;
+  border-radius: 50%;
+}
+.user__name .user__text {
+  margin-right: 5px;
 }
 
 .text {
@@ -82,11 +126,17 @@ html {
   line-height: 90px;
   color: var(--color-blue);
   text-transform: capitalize;
+  font-weight: 700;
 }
 
-.search__input {
+.search {
   width: 670px;
+  position: relative;
+}
+.search__input {
+  width: 100%;
   height: 90px;
+  border: none;
 }
 .search__btn {
   background-color: var(--color-red);
@@ -94,12 +144,16 @@ html {
   height: 85px;
 }
 .search__btn--round {
+  position: absolute;
+  right: 1%;
+  height: 85%;
   font-size: 30px;
-  width: 200px;
+  width: 194px;
   border-radius: 90px 0 0 0;
-  margin: -205px;
-  border: solid 0px var(--color-red);
+  border: none;
   color: white;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .icon_left {
@@ -125,7 +179,11 @@ html {
   height: 1210px;
   right: 0px;
   top: 0px;
-  z-index: 1;
+  z-index: -2;
+}
+
+.aaaa {
+  height: 900px;
 }
 
 /*# sourceMappingURL=output.css.map */
