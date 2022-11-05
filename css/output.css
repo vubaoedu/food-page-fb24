@@ -63,7 +63,7 @@ html {
 }
 .header__main .main__left {
   position: absolute;
-  top: 258px;
+  top: 100px;
   left: 124px;
 }
 
@@ -83,6 +83,7 @@ html {
 .user {
   display: flex;
   color: white;
+  font-size: 16px;
 }
 .user__icon {
   position: relative;
@@ -115,6 +116,7 @@ html {
   flex-direction: column;
 }
 .text__food {
+  font-weight: 900;
   font-size: 200px;
   color: var(--color-blue);
   line-height: 300px;
@@ -127,6 +129,34 @@ html {
   color: var(--color-blue);
   text-transform: capitalize;
   font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.img {
+  position: absolute;
+  right: 130px;
+  top: 176px;
+  width: 870px;
+}
+.img__make {
+  width: 100%;
+  position: absolute;
+  right: 140px;
+  top: 0px;
+  z-index: -5;
+}
+.img__delicious {
+  position: absolute;
+  top: -50px;
+  width: 100%;
+  z-index: 5;
+}
+.img__lettuce {
+  width: 60%;
+  position: absolute;
+  right: 140px;
+  top: -250px;
+  z-index: -4;
 }
 
 .search {
@@ -179,11 +209,269 @@ html {
   height: 1210px;
   right: 0px;
   top: 0px;
-  z-index: -2;
+  z-index: -5;
 }
 
-.aaaa {
-  height: 900px;
+.menu {
+  display: none;
+}
+
+.next__left {
+  position: absolute;
+  bottom: 100px;
+  right: 260px;
+  width: 45px;
+}
+.next__left img {
+  width: 100%;
+}
+.next__right {
+  position: absolute;
+  bottom: 100px;
+  right: 180px;
+  width: 45px;
+}
+.next__right img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1192px) {
+  .header {
+    width: 100%;
+    height: 924px;
+  }
+  .header__top .left_head .logo {
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    width: 245px;
+    height: 55px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 90px;
+  }
+  .header__top .left_head .nav {
+    display: none;
+  }
+  .header__top .user {
+    display: none;
+    z-index: 1;
+  }
+  .header__main .main__left {
+    position: absolute;
+    top: 188px;
+    left: 24px;
+  }
+  .text__food {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .text__sub {
+    font-size: 60px;
+    line-height: 70px;
+    margin: 30px 0px;
+  }
+  .img {
+    position: absolute;
+    right: 50px;
+    top: 176px;
+    width: 550px;
+  }
+  .img__make {
+    width: 80%;
+    position: absolute;
+    right: 140px;
+    top: 0px;
+    z-index: -5;
+  }
+  .img__delicious {
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    z-index: 5;
+  }
+  .img__lettuce {
+    width: 50%;
+    position: absolute;
+    right: 140px;
+    top: -200px;
+    z-index: -4;
+  }
+  .search {
+    width: 470px;
+  }
+  .search__btn--round {
+    width: 121px;
+  }
+  .red {
+    width: 302px;
+    height: 924px;
+  }
+  .next__left {
+    bottom: 120px;
+    right: 180px;
+    width: 50px;
+  }
+  .next__left img {
+    width: 100%;
+  }
+  .next__right {
+    bottom: 120px;
+    right: 80px;
+    width: 50px;
+  }
+  .next__right img {
+    width: 100%;
+  }
+  .icon_left {
+    bottom: 187px;
+  }
+  .menu {
+    width: 50px;
+    color: white;
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 33px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .menu:hover .dropdown-content {
+    display: block;
+  }
+}
+@media only screen and (max-width: 554px) {
+  .header {
+    width: 100%;
+    height: 1054px;
+  }
+  .header__top .left_head .logo {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 165px;
+    height: 55px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 90px;
+  }
+  .header__top .left_head .nav {
+    display: none;
+  }
+  .header__top .user {
+    display: none;
+    z-index: 1;
+  }
+  .header__main .main__left {
+    position: absolute;
+    top: 107px;
+    left: 24px;
+  }
+  .text__food {
+    font-size: 100px;
+    line-height: 70px;
+  }
+  .text__sub {
+    font-size: 60px;
+    line-height: 70px;
+    margin: 30px 0px;
+  }
+  .img {
+    position: absolute;
+    left: 100px;
+    top: 720px;
+    width: 400px;
+  }
+  .img__make {
+    width: 80%;
+    position: absolute;
+    right: 140px;
+    top: 0px;
+    z-index: -5;
+  }
+  .img__delicious {
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    z-index: 5;
+  }
+  .img__lettuce {
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    top: -180px;
+    z-index: -4;
+  }
+  .search {
+    width: 470px;
+  }
+  .search__btn--round {
+    width: 121px;
+  }
+  .red {
+    width: 140px;
+    height: 1054px;
+  }
+  .next__left {
+    width: 30px;
+    bottom: 10px;
+    right: 70px;
+  }
+  .next__left img {
+    width: 100%;
+  }
+  .next__right {
+    width: 30px;
+    bottom: 10px;
+    right: 20px;
+  }
+  .next__right img {
+    width: 100%;
+  }
+  .icon_left {
+    bottom: 387px;
+  }
+  .menu {
+    width: 50px;
+    color: white;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .menu:hover .dropdown-content {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
