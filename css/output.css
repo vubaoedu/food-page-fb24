@@ -83,6 +83,7 @@ html {
 .user {
   display: flex;
   color: white;
+  font-size: 16px;
 }
 .user__icon {
   position: relative;
@@ -127,6 +128,33 @@ html {
   color: var(--color-blue);
   text-transform: capitalize;
   font-weight: 700;
+}
+
+.img {
+  position: absolute;
+  right: 130px;
+  top: 176px;
+  width: 870px;
+}
+.img__make {
+  width: 100%;
+  position: absolute;
+  right: 140px;
+  top: 0px;
+  z-index: -5;
+}
+.img__delicious {
+  position: absolute;
+  top: -50px;
+  width: 100%;
+  z-index: 5;
+}
+.img__lettuce {
+  width: 60%;
+  position: absolute;
+  right: 140px;
+  top: -250px;
+  z-index: -4;
 }
 
 .search {
@@ -179,7 +207,7 @@ html {
   height: 1210px;
   right: 0px;
   top: 0px;
-  z-index: -2;
+  z-index: -5;
 }
 
 .aaaa {

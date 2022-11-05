@@ -4,18 +4,15 @@
     width: 100%;
     height: 1048px;
     z-index: -3;
-
     &__top {
         padding: 0 125px;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         .left_head {
             display: flex;
             align-items: center;
-
             .logo {
                 color: var(--color-red);
                 width: 245px;
@@ -25,17 +22,14 @@
                 line-height: 108px;
                 margin-right: 200px;
             }
-
             .nav {
                 color: var(--color-blue);
             }
         }
-
         .user {
             z-index: 1;
         }
     }
-
     &__main {
         .main__left {
             position: absolute;
@@ -49,10 +43,8 @@
     ul {
         display: flex;
         list-style-type: none;
-
         li {
             margin: 20px;
-
             a {
                 text-decoration: none;
                 font-weight: 400;
@@ -65,7 +57,7 @@
 .user {
     display: flex;
     color: white;
-
+    font-size: 16px;
     &__icon {
         position: relative;
         text-align: center;
@@ -76,7 +68,6 @@
         border-radius: 50%;
         color: var(--color-blue);
         margin-right: 5px;
-
         &--green {
             position: absolute;
             top: 0;
@@ -88,7 +79,6 @@
             border-radius: 50%;
         }
     }
-
     &__name {
         .user__text {
             margin-right: 5px;
@@ -100,7 +90,6 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-
     &__food {
         font-size: 200px;
         color: var(--color-blue);
@@ -108,7 +97,6 @@
         text-transform: capitalize;
         opacity: 0.05;
     }
-
     &__sub {
         font-size: 72px;
         line-height: 90px;
@@ -118,21 +106,45 @@
     }
 }
 
+.img {
+    position: absolute;
+    right: 130px;
+    top: 176px;
+    width: 870px;
+    &__make {
+        width: 100%;
+        position: absolute;
+        right: 140px;
+        top: 0px;
+        z-index: -5;
+    }
+    &__delicious {
+        position: absolute;
+        top: -50px;
+        width: 100%;
+        z-index: 5;
+    }
+    &__lettuce {
+        width: 60%;
+        position: absolute;
+        right: 140px;
+        top: -250px;
+        z-index: -4;
+    }
+}
+
 .search {
     width: 670px;
     position: relative;
-
     &__input {
         width: 100%;
         height: 90px;
         border: none;
     }
-
     &__btn {
         background-color: var(--color-red);
         padding: rem(21) rem(75);
         height: 85px;
-
         &--round {
             position: absolute;
             right: 1%;
@@ -159,7 +171,6 @@
     font-size: 30px;
     color: white;
     padding-left: 25px;
-
     .fa-solid {
         margin: 17px;
     }
@@ -172,7 +183,7 @@
     height: 1210px;
     right: 0px;
     top: 0px;
-    z-index: -2;
+    z-index: -5;
 }
 
 .aaaa {
